@@ -9,14 +9,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import Link from "./Link";
 import Logo from "./Logo";
+import LaunchIcon from "@mui/icons-material/Launch";
 
 const pages = [
   { label: "Home", link: "/" },
-  { label: "About", link: "about" },
-  { label: "Donate", link: "donate" },
   { label: "Contact", link: "contact" },
 ];
 
@@ -34,33 +32,9 @@ export default function NavBar() {
   };
 
   return (
-    <AppBar position="sticky" elevation={0}>
+    <Box bgcolor="#f7f6f0">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Logo
-            sx={{
-              display: { xs: "none", md: "flex", width: 64, height: 64 },
-              mr: 1,
-            }}
-          />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            TAMPA VOLUNTEERS
-          </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -68,7 +42,9 @@ export default function NavBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              sx={{
+                color: "text.primary",
+              }}
             >
               <MenuIcon />
             </IconButton>
@@ -102,25 +78,32 @@ export default function NavBar() {
               ))}
             </Menu>
           </Box>
-          <Logo sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
+          <Logo
             sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
+              display: {
+                xs: "flex",
+                md: "none",
+                width: "auto",
+                height: 56,
+                aspectRatio: 2.89,
+              },
+              mr: 1,
             }}
-          >
-            ZABI BABAR
-          </Typography>
+          />
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}></Box>
+          <Logo
+            sx={{
+              display: {
+                xs: "none",
+                md: "flex",
+                width: "auto",
+                height: 56,
+                aspectRatio: 2.89,
+              },
+              mr: 1,
+            }}
+          />
+
           <Box
             sx={{
               flexGrow: 1,
@@ -137,7 +120,7 @@ export default function NavBar() {
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
-                  color: "primary.contrastText",
+                  color: "text.primary",
                   "&:hover": {
                     backgroundColor: "secondary.main",
                     color: "secondary.contrastText",
@@ -147,9 +130,24 @@ export default function NavBar() {
                 {page.label}
               </Button>
             ))}
+            <Button
+              component={Link}
+              href="https://www.meetup.com/tampa-volunteers/#pledge"
+              onClick={handleCloseNavMenu}
+              endIcon={<LaunchIcon />}
+              target="_blank"
+              rel="noopener"
+              variant="contained"
+              disableElevation
+              sx={{
+                my: 2,
+              }}
+            >
+              Donate
+            </Button>
           </Box>
         </Toolbar>
       </Container>
-    </AppBar>
+    </Box>
   );
 }

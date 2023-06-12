@@ -7,17 +7,13 @@ import { Box } from "@mui/material";
 
 export default function Footer() {
   return (
-    <Box sx={{ height: 64, width: "100%" }} bgcolor="primary.main">
+    <Box sx={{ height: 64, width: "100%" }} bgcolor="#f7f6f0">
       <Container maxWidth="xl">
         <Toolbar
           disableGutters
           sx={{ display: "flex", justifyContent: "space-between" }}
         >
-          <Typography
-            variant="body2"
-            color="primary.contrastText"
-            align="center"
-          >
+          <Typography variant="body2" align="center">
             Copyright © Tampa Volunteers {new Date().getFullYear()}.
           </Typography>
           <SocialLinks></SocialLinks>

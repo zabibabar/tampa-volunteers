@@ -1,12 +1,19 @@
+import Causes from "@/app/sections/Causes";
+import Events from "@/app/sections/Events";
+import Hero from "@/app/sections/Hero";
+import Organizations from "@/app/sections/Organizations";
+import Stats from "@/app/sections/Stats";
+import WhyJoin from "@/app/sections/WhyJoin";
+
 export default function Home() {
   return (
-    <ol>
-      <li>Show Landing Page with Meetup Link and Donation CTA (Home)</li>
-      <li>Show Organization Lists (Home)</li>
-      <li>Show Previous Event Cards (Home)</li>
-      <li>Backstory (About)</li>
-      <li>Donation / Pledge Link (Donate)</li>
-      <li>Contact Page (Contact)</li>
-    </ol>
+    <>
+      <Hero></Hero>
+      <Stats></Stats>
+      <WhyJoin></WhyJoin>
+      <Causes></Causes>
+      <Organizations></Organizations>
+      <Events></Events>
+    </>
   );
 }
