@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 
 export default function Footer() {
   return (
-    <Box sx={{ height: 64, width: "100%" }} bgcolor="#f7f6f0">
+    <Box sx={{ height: 64, width: "100%" }}>
       <Container maxWidth="xl">
         <Toolbar
           disableGutters

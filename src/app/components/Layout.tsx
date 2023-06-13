@@ -11,11 +11,10 @@ const Layout = ({ children }: PropsWithChildren) => {
         minHeight: "100vh",
         flexDirection: "column",
       }}
+      bgcolor="secondary.light"
     >
       <Navbar />
-      <Box sx={{ flexGrow: 1, pb: 8 }} bgcolor="#f7f6f0">
-        {children}
-      </Box>
+      <Box sx={{ flexGrow: 1, pb: 8 }}>{children}</Box>
       <Footer />
     </Box>
   );

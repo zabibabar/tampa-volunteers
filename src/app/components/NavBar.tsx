@@ -1,5 +1,4 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
@@ -15,6 +14,9 @@ import LaunchIcon from "@mui/icons-material/Launch";
 
 const pages = [
   { label: "Home", link: "/" },
+  { label: "About", link: "#about" },
+  { label: "Testimonials", link: "#testimonials" },
+  { label: "Events", link: "#events" },
   { label: "Contact", link: "contact" },
 ];
 
@@ -32,7 +34,7 @@ export default function NavBar() {
   };
 
   return (
-    <Box bgcolor="#f7f6f0">
+    <Box p={3}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -76,6 +78,13 @@ export default function NavBar() {
                   <Typography textAlign="center">{page.label}</Typography>
                 </MenuItem>
               ))}
+              <MenuItem
+                onClick={handleCloseNavMenu}
+                component={Link}
+                href="https://www.meetup.com/tampa-volunteers/#pledge"
+              >
+                <Typography textAlign="center">Donate</Typography>
+              </MenuItem>
             </Menu>
           </Box>
           <Logo

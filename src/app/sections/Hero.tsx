@@ -17,9 +17,24 @@ const Hero = () => {
           textAlign="center"
         >
           <Typography variant="h1" component="h1" fontWeight="bold">
-            Inspire Change By Leading The Way
+            Inspire
+            <Typography
+              variant="h1"
+              component="span"
+              fontWeight="bold"
+              color="secondary"
+            >
+              {" "}
+              Change{" "}
+            </Typography>
+            By Leading The Way
           </Typography>
-          <Typography component="div" color="text.secondary" gutterBottom>
+          <Typography
+            variant="h6"
+            component="div"
+            color="text.secondary"
+            gutterBottom
+          >
             Tampa Volunteers is dedicated to building a stronger community
             through volunteerism
           </Typography>

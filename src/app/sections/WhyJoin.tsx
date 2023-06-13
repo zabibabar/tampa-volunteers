@@ -12,7 +12,7 @@ export default function WhyJoin() {
       <Grid container spacing={8}>
         <Grid item xs={12} md={4}>
           <Box display="flex" flexDirection="column" alignItems="center" px={2}>
-            <Box bgcolor="#ffdcdc" borderRadius={8} p={4} mb={5}>
+            <Box bgcolor="#ffdcdc" borderRadius={2} p={4} mb={5}>
               <TagFacesIcon sx={{ height: 64, width: 64 }} />
             </Box>
             <Typography mb={2} variant="h6" fontWeight="bold">
@@ -26,7 +26,7 @@ export default function WhyJoin() {
         </Grid>
         <Grid item xs={12} md={4}>
           <Box display="flex" flexDirection="column" alignItems="center" px={2}>
-            <Box bgcolor="#ffdcdc" borderRadius={8} p={4} mb={5}>
+            <Box bgcolor="#ffdcdc" borderRadius={2} p={4} mb={5}>
               <VolunteerActivismIcon sx={{ height: 64, width: 64 }} />
             </Box>
             <Typography mb={2} variant="h6" fontWeight="bold">
@@ -41,7 +41,7 @@ export default function WhyJoin() {
 
         <Grid item xs={12} md={4}>
           <Box display="flex" flexDirection="column" alignItems="center" px={2}>
-            <Box bgcolor="#ffdcdc" borderRadius={12} p={4} mb={5}>
+            <Box bgcolor="#ffdcdc" borderRadius={2} p={4} mb={5}>
               <Diversity3Icon sx={{ height: 64, width: 64 }} />
             </Box>
             <Typography mb={2} variant="h6" fontWeight="bold">

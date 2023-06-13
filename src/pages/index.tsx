@@ -2,18 +2,20 @@ import Causes from "@/app/sections/Causes";
 import Events from "@/app/sections/Events";
 import Hero from "@/app/sections/Hero";
 import Organizations from "@/app/sections/Organizations";
-import Stats from "@/app/sections/Stats";
+import About from "@/app/sections/About";
+import Testimonials from "@/app/sections/Testimonials";
 import WhyJoin from "@/app/sections/WhyJoin";
 
 export default function Home() {
   return (
     <>
       <Hero></Hero>
-      <Stats></Stats>
+      <About></About>
       <WhyJoin></WhyJoin>
+      <Testimonials></Testimonials>
       <Causes></Causes>
-      <Organizations></Organizations>
       <Events></Events>
+      <Organizations></Organizations>
     </>
   );
 }

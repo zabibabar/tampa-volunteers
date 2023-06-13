@@ -11,9 +11,10 @@ const StyledRating = styled(Rating)(({ theme }) => ({
   },
 }));
 
-export default function Stats() {
+export default function About() {
   return (
     <Section
+      id="about"
       bgcolor="white"
       maxWidth="lg"
       title="We Are"

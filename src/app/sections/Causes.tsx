@@ -6,7 +6,7 @@ import causes from "../causes";
 
 export default function Causes() {
   return (
-    <Section bgcolor="white" title="Causes" subTitle="Allocate Your Help To">
+    <Section id="causes" title="Causes" subTitle="Allocate Your Help To">
       <Grid container spacing={8}>
         {causes.map(({ icon, name, description }, index) => (
           <Grid key={index} item xs={12} md={4}>
@@ -16,7 +16,7 @@ export default function Causes() {
               alignItems="center"
               px={2}
             >
-              <Box bgcolor="primary.light" borderRadius={8} p={4} mb={5}>
+              <Box bgcolor="primary.light" borderRadius={2} p={4} mb={5}>
                 {icon}
               </Box>
               <Typography mb={2} variant="h6" fontWeight="bold">

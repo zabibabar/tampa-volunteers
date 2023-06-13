@@ -12,7 +12,12 @@ export default function Events() {
   const meetupEvents = events;
 
   return (
-    <Section bgcolor="white" title="Our Events" subTitle="Come Join Us">
+    <Section
+      id="events"
+      bgcolor="white"
+      title="Our Events"
+      subTitle="Come Join Us"
+    >
       <Grid container spacing={{ xs: 8, lg: 4 }}>
         {meetupEvents.map(
           ({ name, image, meetupLink, date, org, cause }, index) => (
