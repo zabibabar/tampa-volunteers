@@ -89,6 +89,7 @@ export default function NavBar() {
           </Box>
           <Logo
             sx={{
+              position: "relative",
               display: {
                 xs: "flex",
                 md: "none",
@@ -102,6 +103,7 @@ export default function NavBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}></Box>
           <Logo
             sx={{
+              position: "relative",
               display: {
                 xs: "none",
                 md: "flex",
