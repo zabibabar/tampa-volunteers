@@ -17,7 +17,7 @@ const pages = [
   { label: "About", link: "#about" },
   { label: "Testimonials", link: "#testimonials" },
   { label: "Events", link: "#events" },
-  { label: "Contact", link: "contact" },
+  { label: "Contact", link: " mailto:zabiubabar@gmail.com" },
 ];
 
 export default function NavBar() {
