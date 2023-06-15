@@ -41,7 +41,7 @@ export default function Organizations() {
         <Button
           variant="outlined"
           component={Link}
-          href="mailto:zabiubabar@gmail.com"
+          href="/contact"
           disableElevation
         >
           Contact Us
