@@ -15,7 +15,7 @@ export default function WhyJoin() {
             <Box bgcolor="#ffdcdc" borderRadius={2} p={4} mb={5}>
               <TagFacesIcon sx={{ height: 64, width: 64 }} />
             </Box>
-            <Typography mb={2} variant="h6" fontWeight="bold">
+            <Typography mb={2} variant="h6" component="div" fontWeight="bold">
               Give Happiness
             </Typography>
             <Typography color="text.secondary" textAlign="center">
@@ -29,7 +29,7 @@ export default function WhyJoin() {
             <Box bgcolor="#ffdcdc" borderRadius={2} p={4} mb={5}>
               <VolunteerActivismIcon sx={{ height: 64, width: 64 }} />
             </Box>
-            <Typography mb={2} variant="h6" fontWeight="bold">
+            <Typography mb={2} variant="h6" component="div" fontWeight="bold">
               Share Love
             </Typography>
             <Typography color="text.secondary" textAlign="center">
@@ -44,7 +44,7 @@ export default function WhyJoin() {
             <Box bgcolor="#ffdcdc" borderRadius={2} p={4} mb={5}>
               <Diversity3Icon sx={{ height: 64, width: 64 }} />
             </Box>
-            <Typography mb={2} variant="h6" fontWeight="bold">
+            <Typography mb={2} variant="h6" component="div" fontWeight="bold">
               Build Socially
             </Typography>
             <Typography color="text.secondary" textAlign="center">

@@ -20,7 +20,7 @@ export default function About() {
       title="We Are"
       subTitle="Tampa Volunteers"
     >
-      <Typography mb={16} variant="h5" textAlign="center">
+      <Typography mb={16} variant="h5" component="div" textAlign="center">
         Tampa Volunteers was founded by Zabi Babar in January 2023 to share his
         passion for volunteering with other Tampa Bay residents. Zabi had been
         volunteering with local non-profits in Tampa Bay through out college and
@@ -32,7 +32,7 @@ export default function About() {
       <Grid container spacing={{ xs: 8, lg: 4 }}>
         <Grid item xs={12} sm={6} lg={3}>
           <Box display="flex" flexDirection="column" alignItems="center">
-            <Typography mb={2} variant="h2" fontWeight="bold">
+            <Typography mb={2} variant="h2" component="div" fontWeight="bold">
               200+
             </Typography>
             <Typography color="text.secondary" textAlign="center">
@@ -50,7 +50,7 @@ export default function About() {
               icon={<FavoriteIcon fontSize="inherit" />}
               emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
             />
-            <Typography mb={2} variant="h2" fontWeight="bold">
+            <Typography mb={2} variant="h2" component="div" fontWeight="bold">
               4.9
             </Typography>
             <Typography color="text.secondary" textAlign="center">
@@ -61,7 +61,7 @@ export default function About() {
 
         <Grid item xs={12} sm={6} lg={3}>
           <Box display="flex" flexDirection="column" alignItems="center">
-            <Typography mb={2} variant="h2" fontWeight="bold">
+            <Typography mb={2} variant="h2" component="div" fontWeight="bold">
               2023
             </Typography>
             <Typography color="text.secondary" textAlign="center">
@@ -72,7 +72,7 @@ export default function About() {
 
         <Grid item xs={12} sm={6} lg={3}>
           <Box display="flex" flexDirection="column" alignItems="center">
-            <Typography mb={2} variant="h2" fontWeight="bold">
+            <Typography mb={2} variant="h2" component="div" fontWeight="bold">
               15+
             </Typography>
             <Typography color="text.secondary" textAlign="center">

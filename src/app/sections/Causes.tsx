@@ -19,7 +19,7 @@ export default function Causes() {
               <Box bgcolor="primary.light" borderRadius={2} p={4} mb={5}>
                 {icon}
               </Box>
-              <Typography mb={2} variant="h6" fontWeight="bold">
+              <Typography mb={2} variant="h6" component="div" fontWeight="bold">
                 {name}
               </Typography>
               <Typography color="text.secondary" textAlign="center">

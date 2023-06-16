@@ -1,5 +1,5 @@
 import { Poppins } from "next/font/google";
-import { createTheme } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
 export const poppins = Poppins({
   weight: ["300", "400", "500", "700"],
@@ -8,7 +8,7 @@ export const poppins = Poppins({
   fallback: ["Helvetica", "Arial", "sans-serif"],
 });
 
-const theme = createTheme({
+let theme = createTheme({
   palette: {
     primary: {
       light: "#ffdcdc",
@@ -26,5 +26,7 @@ const theme = createTheme({
     fontFamily: poppins.style.fontFamily,
   },
 });
+
+theme = responsiveFontSizes(theme);
 
 export default theme;
