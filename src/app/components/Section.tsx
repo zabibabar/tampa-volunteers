@@ -44,7 +44,7 @@ const Section = ({
             {subTitle}
           </Typography>
         )}
-        <Box component="div" textAlign="justify">
+        <Box component="div">
           {children}
         </Box>
       </Container>
