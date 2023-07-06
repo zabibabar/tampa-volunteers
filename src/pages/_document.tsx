@@ -25,6 +25,10 @@ export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
         <meta name="theme-color" content={theme.palette.primary.main} />
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="emotion-insertion-point" content="" />
+        <meta
+          name="description"
+          content="Tampa Volunteers is a thriving volunteering and social meetup group with over 300 members, focused on introducing volunteers to local nonprofits."
+        />
         {emotionStyleTags}
       </Head>
       <body>
