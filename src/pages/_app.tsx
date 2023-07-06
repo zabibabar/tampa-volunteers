@@ -20,7 +20,9 @@ export default function MyApp(props: MyAppProps) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>Tampa Volunteers</title>
+        <title>
+          Tampa Volunteers | Largest Volunteering and Social Meetup In Tampa Bay
+        </title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <Script
