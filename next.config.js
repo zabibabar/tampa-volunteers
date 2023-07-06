@@ -13,6 +13,11 @@ const nextConfig = {
         hostname: "secure.meetupstatic.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        port: "",
+      },
     ],
   },
 };
