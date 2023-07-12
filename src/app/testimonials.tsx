@@ -36,6 +36,12 @@ const testimonials: Testimonial[] = [
     message:
       "Zabi and the other volunteers I have met on this meetup at these events are wonderful people giving back.",
   },
+  {
+    name: "Petra",
+    title: "Meetup Member",
+    message:
+      "Thank you Zabi for all the events that you organize, it takes a special person to do so.",
+  },
 ];
 
 export default testimonials;

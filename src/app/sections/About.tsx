@@ -33,7 +33,7 @@ export default function About() {
         <Grid item xs={12} sm={6} lg={3}>
           <Box display="flex" flexDirection="column" alignItems="center">
             <Typography mb={2} variant="h2" component="div" fontWeight="bold">
-              200+
+              300+
             </Typography>
             <Typography color="text.secondary" textAlign="center">
               Members and Counting
@@ -73,7 +73,7 @@ export default function About() {
         <Grid item xs={12} sm={6} lg={3}>
           <Box display="flex" flexDirection="column" alignItems="center">
             <Typography mb={2} variant="h2" component="div" fontWeight="bold">
-              15+
+              25+
             </Typography>
             <Typography color="text.secondary" textAlign="center">
               Collaborations With Local Organizations
