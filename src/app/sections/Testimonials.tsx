@@ -4,6 +4,7 @@ import { Box, Grid } from "@mui/material";
 import Section from "../components/Section";
 import testimonials from "../testimonials";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
+import Image from "next/image";
 
 export default function Testimonials() {
   return (
@@ -14,7 +15,7 @@ export default function Testimonials() {
       subTitle="What People Are Saying"
     >
       <Grid container spacing={8}>
-        {testimonials.map(({ name, title, message }, index) => (
+        {testimonials.map(({ name, title, picture, message }, index) => (
           <Grid key={index} item xs={12} sm={6} lg={4}>
             <Box
               display="flex"
@@ -28,12 +29,25 @@ export default function Testimonials() {
                 sx={{ alignSelf: "center", width: 64, height: 64, mb: 2 }}
               />
               <Typography>{message}</Typography>
-              <Typography mt={5} color="secondary" fontWeight="medium">
-                {name}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {title}
-              </Typography>
+              <Box display="flex" alignItems="center" gap={2} mt={5}>
+                <Box>
+                  <Image
+                    src={picture}
+                    alt={`${name} picture`}
+                    width={64}
+                    height={64}
+                    style={{ borderRadius: "50%", objectFit: "cover" }}
+                  ></Image>
+                </Box>
+                <Box>
+                  <Typography color="secondary" fontWeight="medium">
+                    {name}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {title}
+                  </Typography>
+                </Box>
+              </Box>
             </Box>
           </Grid>
         ))}

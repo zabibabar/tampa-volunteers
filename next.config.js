@@ -18,6 +18,16 @@ const nextConfig = {
         hostname: "res.cloudinary.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "www.app.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "floridaadoptionattorney.com",
+        port: "",
+      },
     ],
   },
 };
