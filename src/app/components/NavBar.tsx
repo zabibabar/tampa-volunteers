@@ -10,7 +10,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Link from "./Link";
 import Logo from "./Logo";
-import LaunchIcon from "@mui/icons-material/Launch";
+import { MeetupIcon } from "./SocialLinks";
 
 const pages = [
   { label: "Home", link: "/" },
@@ -81,7 +81,7 @@ export default function NavBar() {
               <MenuItem
                 onClick={handleCloseNavMenu}
                 component={Link}
-                href="https://www.meetup.com/tampa-volunteers/#pledge"
+                href="https://meetu.ps/c/521Cz/H7wgF/a"
               >
                 <Typography textAlign="center">Donate</Typography>
               </MenuItem>
@@ -142,10 +142,9 @@ export default function NavBar() {
               </Button>
             ))}
             <Button
-              component={Link}
-              href="https://www.meetup.com/tampa-volunteers/#pledge"
+              href="https://meetu.ps/c/521Cz/H7wgF/a"
+              endIcon={<MeetupIcon />}
               onClick={handleCloseNavMenu}
-              endIcon={<LaunchIcon />}
               target="_blank"
               rel="noopener"
               variant="contained"
@@ -154,7 +153,7 @@ export default function NavBar() {
                 my: 2,
               }}
             >
-              Donate
+              Join
             </Button>
           </Box>
         </Toolbar>
