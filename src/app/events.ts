@@ -1,6 +1,6 @@
 import { CauseName } from "./causes";
 
-type Event = {
+export type Event = {
   name: string;
   date: string;
   org: string;
@@ -38,15 +38,6 @@ const events: Event[] = [
     cause: "Children & Youth",
   },
   {
-    name: "Tennis on the Green",
-    date: "May 2023",
-    org: "Children's Cancer Center",
-    image:
-      "https://secure.meetupstatic.com/photos/event/1/7/c/highres_511980380.webp",
-    meetupLink: "https://www.meetup.com/tampa-volunteers/events/292810882/",
-    cause: "Health & Disease",
-  },
-  {
     name: "Warehouse Sorting",
     date: "June 2023",
     org: "Feeding Tampa Bay",
@@ -57,11 +48,11 @@ const events: Event[] = [
   },
   {
     name: "Clearwater Garden Club",
-    date: "July 2023",
+    date: "Oct 2023",
     org: "Keeping Pinellas Beautiful",
     image:
-      "https://secure.meetupstatic.com/photos/event/9/e/9/4/600_512920596.webp?w=384",
-    meetupLink: "https://www.meetup.com/tampa-volunteers/events/293576623/",
+      "https://secure.meetupstatic.com/photos/event/8/d/5/a/highres_515076186.webp",
+    meetupLink: "https://www.meetup.com/tampa-volunteers/events/295408166/",
     cause: "Environmental",
   },
   {
@@ -69,7 +60,7 @@ const events: Event[] = [
     date: "July 2023",
     org: "Suncoast Primate Sanctuary",
     image:
-      "https://secure.meetupstatic.com/photos/event/3/9/a/4/600_513074756.webp?w=384",
+      "https://secure.meetupstatic.com/photos/event/c/8/a/c/highres_514431372.webp",
     meetupLink: "https://www.meetup.com/tampa-volunteers/events/293671909/",
     cause: "Animal & Wildlife",
   },
@@ -78,9 +69,18 @@ const events: Event[] = [
     date: "July 2023",
     org: "Humane Society of Tampa Bay",
     image:
-      "https://secure.meetupstatic.com/photos/event/c/e/c/a/600_513052938.webp?w=384",
+      "https://secure.meetupstatic.com/photos/event/e/8/1/4/highres_514739412.webp",
     meetupLink: "https://www.meetup.com/tampa-volunteers/events/293685288/",
     cause: "Animal & Wildlife",
+  },
+  {
+    name: "Restore Oyster Reef",
+    date: "Aug 2023",
+    org: "Pinellas County",
+    image:
+      "https://secure.meetupstatic.com/photos/event/b/9/d/1/highres_514907569.webp",
+    meetupLink: "https://www.meetup.com/tampa-volunteers/events/294748840",
+    cause: "Environmental",
   },
 ];
 

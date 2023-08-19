@@ -60,8 +60,8 @@ const organizations = [
     logo: "https://res.cloudinary.com/dmtvchdf2/image/upload/v1688680153/Tampa%20Volunteers/centre-for-women.png",
   },
   {
-    name: "Crohn's Colitis Foundation",
-    logo: "https://res.cloudinary.com/dmtvchdf2/image/upload/v1688680156/Tampa%20Volunteers/crohns-colitis-foundation.svg",
+    name: "Ronald McDonald House Charities",
+    logo: "https://res.cloudinary.com/dmtvchdf2/image/upload/v1692469572/Tampa%20Volunteers/ronald-mcdonald-house.png",
   },
 ];
 

@@ -2,8 +2,8 @@ import * as React from "react";
 import Typography from "@mui/material/Typography";
 import { Box, Grid, Rating, styled } from "@mui/material";
 import Section from "../components/Section";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import StarIcon from "@mui/icons-material/Star";
+import StarBorderIcon from "@mui/icons-material/StarBorder";
 import Link from "../components/Link";
 
 const StyledRating = styled(Rating)(({ theme }) => ({
@@ -37,28 +37,28 @@ export default function About() {
         events through out the month.
       </Typography>
       <Grid container spacing={{ xs: 8, lg: 4 }}>
-        <Grid item xs={12} sm={6} lg={3}>
+        <Grid item xs={12} sm={4}>
           <Box display="flex" flexDirection="column" alignItems="center">
             <Typography mb={2} variant="h2" component="div" fontWeight="bold">
-              350+
+              400+
             </Typography>
             <Typography color="text.secondary" textAlign="center">
               Members and Counting
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={6} lg={3} sx={{ mt: { sm: "-30px" } }}>
+        <Grid item xs={12} sm={4} sx={{ mt: { sm: "-30px" } }}>
           <Box display="flex" flexDirection="column" alignItems="center">
             <StyledRating
               size="large"
               readOnly
-              defaultValue={4.8}
+              defaultValue={4.9}
               precision={0.1}
-              icon={<FavoriteIcon fontSize="inherit" />}
-              emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+              icon={<StarIcon fontSize="inherit" />}
+              emptyIcon={<StarBorderIcon fontSize="inherit" />}
             />
             <Typography mb={2} variant="h2" component="div" fontWeight="bold">
-              4.8
+              4.9
             </Typography>
             <Typography color="text.secondary" textAlign="center">
               Stars on Meetup
@@ -66,7 +66,7 @@ export default function About() {
           </Box>
         </Grid>
 
-        <Grid item xs={12} sm={6} lg={3}>
+        <Grid item xs={12} sm={4}>
           <Box display="flex" flexDirection="column" alignItems="center">
             <Typography mb={2} variant="h2" component="div" fontWeight="bold">
               2023
@@ -77,7 +77,7 @@ export default function About() {
           </Box>
         </Grid>
 
-        <Grid item xs={12} sm={6} lg={3}>
+        {/* <Grid item xs={12} sm={6} lg={3}>
           <Box display="flex" flexDirection="column" alignItems="center">
             <Typography mb={2} variant="h2" component="div" fontWeight="bold">
               15+
@@ -86,7 +86,7 @@ export default function About() {
               Organizations We Have Collaborated With
             </Typography>
           </Box>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Section>
   );

@@ -1,7 +1,7 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import events from "../events";
+import events, { Event } from "../events";
 import Link from "../components/Link";
 import { MeetupIcon } from "../components/SocialLinks";
 import Section from "../components/Section";
@@ -9,7 +9,10 @@ import { Box, Chip, Grid } from "@mui/material";
 import Image from "next/image";
 
 export default function Events() {
-  const meetupEvents = events;
+  const meetupEvents = events.sort(
+    (a: Event, b: Event) =>
+      new Date(a.date).getTime() - new Date(b.date).getTime()
+  );
 
   return (
     <Section
@@ -111,7 +114,7 @@ export default function Events() {
           target="_blank"
           rel="noopener"
         >
-          More Events
+          Upcoming Events
         </Button>
       </Box>
     </Section>
