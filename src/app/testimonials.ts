@@ -26,6 +26,14 @@ const testimonials: Testimonial[] = [
        you shared. Thank you for helping us make a difference! Hope to see you again!`,
   },
   {
+    name: "Tammy",
+    title: "Meetup Member",
+    picture:
+      "https://secure.meetupstatic.com/photos/member/c/1/d/8/member_256369624.jpeg",
+    message:
+      "I completely loved the experience [of volunteering at Trinity Cafe], from beginning to end! Thank you, Zabi, for organizing [Tampa Volunteers] & these events!!",
+  },
+  {
     name: "Beth D.",
     title: "Meetup Member",
     picture:
