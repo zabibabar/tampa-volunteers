@@ -31,16 +31,16 @@ export default function About() {
         </Link>{" "}
         in January 2023 to share his passion for volunteering with other Tampa
         Bay residents. Zabi had been volunteering with local non-profits in
-        Tampa Bay through out college and after graduating and found out that it
-        was a good way to give back to the community and to make new friends.
+        Tampa Bay throughout college and after graduating and found out that it
+        was a great way to give back to the community and to make new friends.
         Tampa Volunteers has grown rapidly since its inception and has several
-        events through out the month.
+        events throughout the month.
       </Typography>
       <Grid container spacing={{ xs: 8, lg: 4 }}>
         <Grid item xs={12} sm={4}>
           <Box display="flex" flexDirection="column" alignItems="center">
             <Typography mb={2} variant="h2" component="div" fontWeight="bold">
-              400+
+              500+
             </Typography>
             <Typography color="text.secondary" textAlign="center">
               Members and Counting
