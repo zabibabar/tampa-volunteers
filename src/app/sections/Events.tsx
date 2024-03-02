@@ -41,6 +41,8 @@ export default function Events() {
                 }}
                 component={Link}
                 href={meetupLink}
+                target="_blank"
+                rel="noopener"
               >
                 <Box
                   width="100%"

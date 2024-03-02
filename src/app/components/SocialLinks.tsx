@@ -32,7 +32,13 @@ type SocialLinkProps = {
 
 const SocialLink = ({ link, icon }: SocialLinkProps) => {
   return (
-    <IconButton LinkComponent={Link} href={link} color="primary">
+    <IconButton
+      LinkComponent={Link}
+      href={link}
+      color="primary"
+      target="_blank"
+      rel="noopener"
+    >
       {icon}
     </IconButton>
   );
