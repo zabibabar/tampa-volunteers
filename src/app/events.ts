@@ -11,15 +11,6 @@ export type Event = {
 
 const events: Event[] = [
   {
-    name: "Iconic: Portrait Edition 2023",
-    date: "Feb 2023",
-    org: "Morean Arts Center",
-    image:
-      "https://secure.meetupstatic.com/photos/event/6/5/e/d/highres_510926093.webp",
-    meetupLink: "https://www.meetup.com/tampa-volunteers/events/291143333/",
-    cause: "Arts & Culture",
-  },
-  {
     name: "Community Food Pantry",
     date: "Apr 2023",
     org: "Feeding Tampa Bay",
@@ -27,42 +18,6 @@ const events: Event[] = [
       "https://secure.meetupstatic.com/photos/event/9/4/9/e/highres_513038046.webp",
     meetupLink: "https://www.meetup.com/tampa-volunteers/events/293109340/",
     cause: "Hunger & Poverty",
-  },
-  {
-    name: "Agents of Change Gala",
-    date: "Apr 2023",
-    org: "Heart of Adoptions Alliance",
-    image:
-      "https://secure.meetupstatic.com/photos/event/2/4/7/highres_510120583.webp",
-    meetupLink: "https://www.meetup.com/tampa-volunteers/events/291164832/",
-    cause: "Children & Youth",
-  },
-  {
-    name: "Warehouse Sorting",
-    date: "June 2023",
-    org: "Feeding Tampa Bay",
-    image:
-      "https://secure.meetupstatic.com/photos/event/2/e/9/5/600_512351925.webp?w=384",
-    meetupLink: "https://www.meetup.com/tampa-volunteers/events/293108322/",
-    cause: "Hunger & Poverty",
-  },
-  {
-    name: "Clearwater Garden Club",
-    date: "Oct 2023",
-    org: "Keeping Pinellas Beautiful",
-    image:
-      "https://secure.meetupstatic.com/photos/event/8/d/5/a/highres_515076186.webp",
-    meetupLink: "https://www.meetup.com/tampa-volunteers/events/295408166/",
-    cause: "Environmental",
-  },
-  {
-    name: "Create Toys for Primates",
-    date: "July 2023",
-    org: "Suncoast Primate Sanctuary",
-    image:
-      "https://secure.meetupstatic.com/photos/event/c/8/a/c/highres_514431372.webp",
-    meetupLink: "https://www.meetup.com/tampa-volunteers/events/293671909/",
-    cause: "Animal & Wildlife",
   },
   {
     name: "Volunteer at Pet Rescue",
@@ -80,6 +35,51 @@ const events: Event[] = [
     image:
       "https://secure.meetupstatic.com/photos/event/b/9/d/1/highres_514907569.webp",
     meetupLink: "https://www.meetup.com/tampa-volunteers/events/294748840",
+    cause: "Environmental",
+  },
+  {
+    name: "Dinner Prep For Ronald McDonald House",
+    date: "Sep 2023",
+    org: "Ronald McDonald House Charities",
+    image:
+      "https://secure.meetupstatic.com/photos/event/c/7/f/7/highres_516111191.webp",
+    meetupLink: "https://www.meetup.com/tampa-volunteers/events/295407923/",
+    cause: "Health & Disease",
+  },
+  {
+    name: "Halloween at Bakas Equestrian Center",
+    date: "Oct 2023",
+    org: "Bakas Equestrian Center",
+    image:
+      "https://secure.meetupstatic.com/photos/event/b/9/e/5/highres_516707589.webp",
+    meetupLink: "https://www.meetup.com/tampa-volunteers/events/294728105/",
+    cause: "Children & Youth",
+  },
+  {
+    name: "Gasparilla Music Festival",
+    date: "Feb 2024",
+    org: "Pancreatic Cancer Action Network",
+    image:
+      "https://secure.meetupstatic.com/photos/event/9/e/e/7/highres_519220679.webp",
+    meetupLink: "https://www.meetup.com/tampa-volunteers/events/298053017/",
+    cause: "Arts & Culture",
+  },
+  {
+    name: "Create Toys For Birds",
+    date: "Nov 2023",
+    org: "Florida Exotic Bird Sanctuary",
+    image:
+      "https://secure.meetupstatic.com/photos/event/7/d/e/0/highres_517052224.webp",
+    meetupLink: "https://www.meetup.com/tampa-volunteers/events/295567958/",
+    cause: "Animal & Wildlife",
+  },
+  {
+    name: "Dunedin Causeway Cleanup",
+    date: "Dec 2023",
+    org: "Keep Pinellas Beautiful",
+    image:
+      "https://secure.meetupstatic.com/photos/event/5/3/f/4/highres_517701492.webp",
+    meetupLink: "https://www.meetup.com/tampa-volunteers/events/294527143/",
     cause: "Environmental",
   },
 ];

@@ -11,19 +11,19 @@ import Image from "next/image";
 export default function Events() {
   const meetupEvents = events.sort(
     (a: Event, b: Event) =>
-      new Date(a.date).getTime() - new Date(b.date).getTime()
+      new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 
   return (
     <Section
       id="events"
       bgcolor="white"
-      title="Our Events"
+      title="Our Past Events"
       subTitle="Come Join Us"
     >
       <Grid container spacing={{ xs: 8, lg: 4 }}>
         {meetupEvents.map(
-          ({ name, image, meetupLink, date, org, cause }, index) => (
+          ({ name, meetupLink, date, image, org, cause }, index) => (
             <Grid key={index} item xs={12} sm={6} lg={4} xl={3}>
               <Box
                 display="flex"
@@ -32,11 +32,15 @@ export default function Events() {
                 height="100%"
                 overflow="hidden"
                 sx={{
+                  textDecoration: "none",
+                  color: "text.primary",
                   "&:hover": {
                     boxShadow: 2,
                     borderRadius: 2,
                   },
                 }}
+                component={Link}
+                href={meetupLink}
               >
                 <Box
                   width="100%"
@@ -80,7 +84,7 @@ export default function Events() {
                     {org}
                   </Typography>
                 </Box>
-                <Box pb={2} px={2}>
+                {/* <Box pb={2} px={2}>
                   <Button
                     size="small"
                     endIcon={<MeetupIcon />}
@@ -98,7 +102,7 @@ export default function Events() {
                   >
                     RSVP on Meetup
                   </Button>
-                </Box>
+                </Box> */}
               </Box>
             </Grid>
           )
@@ -109,7 +113,7 @@ export default function Events() {
         <Button
           endIcon={<MeetupIcon />}
           component={Link}
-          variant="outlined"
+          variant="contained"
           href="https://meetu.ps/c/521Cz/H7wgF/a"
           target="_blank"
           rel="noopener"
