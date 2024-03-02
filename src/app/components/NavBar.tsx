@@ -10,7 +10,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Link from "./Link";
 import Logo from "./Logo";
-import { MeetupIcon } from "./SocialLinks";
+import SocialLinks, { MeetupIcon } from "./SocialLinks";
 
 const pages = [
   { label: "Home", link: "/" },
@@ -34,7 +34,7 @@ export default function NavBar() {
   };
 
   return (
-    <Box p={3}>
+    <Box>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

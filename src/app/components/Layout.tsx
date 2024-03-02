@@ -2,6 +2,7 @@ import { PropsWithChildren } from "react";
 import Footer from "./Footer";
 import Navbar from "./NavBar";
 import { Box } from "@mui/material";
+import Topbar from "./Topbar";
 
 const Layout = ({ children }: PropsWithChildren) => {
   return (
@@ -13,6 +14,7 @@ const Layout = ({ children }: PropsWithChildren) => {
       }}
       bgcolor="secondary.light"
     >
+      <Topbar />
       <Navbar />
       <Box sx={{ flexGrow: 1, pb: 8 }}>{children}</Box>
       <Footer />

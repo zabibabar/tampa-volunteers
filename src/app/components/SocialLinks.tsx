@@ -1,9 +1,22 @@
 import { Box, IconButton, SvgIcon } from "@mui/material";
 import Link from "./Link";
+import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 
 export default function SocialLinks() {
   return (
     <Box display="flex" gap={2}>
+      <SocialLink
+        link="https://www.linkedin.com/company/tampa-volunteers/"
+        icon={<LinkedIn />}
+      ></SocialLink>
+      <SocialLink
+        link="https://www.instagram.com/tampavolunteers/"
+        icon={<Instagram />}
+      ></SocialLink>
+      <SocialLink
+        link="https://www.facebook.com/groups/tampavolunteers"
+        icon={<Facebook />}
+      ></SocialLink>
       <SocialLink
         link="https://meetu.ps/c/521Cz/H7wgF/a"
         icon={<MeetupIcon />}
